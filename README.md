@@ -1,4 +1,7 @@
 # Lakan Singh Degavath — Portfolio
+## Portfolio
+
+🌐 Live Portfolio: https://lakan-portfolio.vercel.app
 
 Personal portfolio website for **Lakan Singh Degavath**, a Software & AI/ML Engineer focused on production AI systems, LLM infrastructure, Generative AI, distributed systems, and high-performance machine learning.
 
