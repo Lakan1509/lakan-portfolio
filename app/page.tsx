@@ -786,7 +786,7 @@ export default function Home() {
 
               <div className="md:text-right">
                 <p className="text-3xl font-bold">
-                  3.99 / 4.0
+                  3.91 / 4.0
                 </p>
 
                 <p className="mt-2 text-sm uppercase tracking-wider text-gray-500">
