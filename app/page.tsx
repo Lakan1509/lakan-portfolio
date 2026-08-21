@@ -17,29 +17,32 @@ export default function Home() {
   const projects = [
     {
       number: "01",
-      title: "GPU-Accelerated LLM Inference & Performance Optimization",
-      subtitle: "High-Performance AI Inference Engineering",
+      title: "LLM Inference Performance Benchmark",
+      subtitle: "Model Inference Benchmarking & Performance Engineering",
+      repo: "https://github.com/Lakan1509/gpu-llm-inference-benchmark",
       tech: [
+        "Python",
         "PyTorch",
-        "CUDA",
-        "TensorRT-LLM",
-        "vLLM",
-        "MLIR",
-        "LLVM",
+        "Hugging Face",
+        "MPS",
+        "Docker",
+        "Pytest",
+        "GitHub Actions",
       ],
       description:
-        "Designed and implemented GPU-accelerated LLM inference pipelines focused on latency, throughput, GPU memory utilization, batching, quantization, and hardware-aware performance optimization.",
+        "Built an LLM inference benchmarking framework for measuring latency, throughput, memory utilization, batching behavior, and device-aware inference performance.",
       highlights: [
-        "Benchmarked latency, throughput, and GPU memory utilization across inference backends.",
-        "Optimized TensorRT-LLM configurations through batching, quantization, and engine-build tuning.",
-        "Analyzed CUDA execution, GPU memory management, parallel computation, and kernel-level performance.",
-        "Implemented GPU compiler optimization workflows using MLIR and LLVM.",
+        "Implemented repeatable latency and throughput benchmarking across configurable batch sizes.",
+        "Added automatic device selection with Apple Silicon MPS support and CPU fallback.",
+        "Measured inference memory usage and performance behavior under different workloads.",
+        "Added automated tests, Docker support, and GitHub Actions CI for reproducible benchmarking.",
       ],
     },
     {
       number: "02",
       title: "Enterprise Multi-Agent AI Platform",
       subtitle: "Production-Oriented LLM, Retrieval & Agent Infrastructure",
+      repo: "https://github.com/Lakan1509/enterprise-multi-agent-ai-platform",
       tech: [
         "Python",
         "FastAPI",
@@ -62,6 +65,7 @@ export default function Home() {
       number: "03",
       title: "Real-Time Machine Learning Fraud Detection Platform",
       subtitle: "Production ML at Financial Transaction Scale",
+      repo: "https://github.com/Lakan1509/real-time-fraud-detection-platform",
       tech: [
         "Python",
         "Kafka",
@@ -605,6 +609,17 @@ export default function Home() {
                         </li>
                       ))}
                     </ul>
+
+                      {"repo" in project && project.repo && (
+                        <a
+                          href={project.repo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-8 inline-flex rounded-lg border border-white/20 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
+                        >
+                          View GitHub Repository →
+                        </a>
+                      )}
                   </div>
                 </div>
               </article>
