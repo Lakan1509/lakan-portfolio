@@ -61,6 +61,3 @@ Large-scale sentiment-analysis research comparing traditional machine-learning m
 - LinkedIn: https://www.linkedin.com/in/lakan-singh-degavath-b88208165/
 - GitHub: https://github.com/Lakan1509
 
-## Portfolio
-
-Public portfolio URL coming soon.
