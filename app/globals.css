@@ -953,3 +953,28 @@ footer {
     grid-template-columns: 24px 1fr 74px;
   }
 }
+
+/* =========================
+   Experience Tags
+========================= */
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 22px;
+}
+
+.experience-tags span {
+  padding: 7px 10px;
+
+  border: 1px solid var(--border);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  color: #b9b9bd;
+
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 10px;
+}

@@ -288,50 +288,111 @@ export default function Home() {
       <section className="section split-section" id="experience">
         <div className="section-heading">
           <p>EXPERIENCE</p>
-          <h2>Software engineering foundations, now focused on AI systems.</h2>
+          <h2>From software engineering to production AI systems.</h2>
         </div>
 
         <div className="timeline">
           <article>
             <div className="timeline-meta">
-              <span>2026 — Present</span>
+              <span>Apr 2026 — Present</span>
               <span>United States</span>
             </div>
+
             <h3>AI/ML Engineer</h3>
             <h4>EasyBee AI</h4>
+
             <p>
               Building production-oriented LLM, RAG, agentic AI, inference,
-              backend, evaluation, and MLOps systems using Python, FastAPI,
-              LangGraph, PyTorch, AWS, and distributed infrastructure.
+              evaluation, and MLOps systems using Python, FastAPI, LangGraph,
+              PyTorch, AWS, vector retrieval, and distributed backend
+              infrastructure.
             </p>
+
+            <div className="experience-tags">
+              <span>LLMs</span>
+              <span>RAG</span>
+              <span>Agentic AI</span>
+              <span>PyTorch</span>
+              <span>FastAPI</span>
+              <span>AWS</span>
+            </div>
           </article>
 
           <article>
             <div className="timeline-meta">
-              <span>2024 — 2025</span>
+              <span>Feb 2026 — Apr 2026</span>
+              <span>United States</span>
+            </div>
+
+            <h3>Software Developer</h3>
+            <h4>EasyBee AI</h4>
+
+            <p>
+              Developed enterprise application and reporting workflows using
+              C#, .NET, Blazor, REST APIs, SQL-backed systems, data integration,
+              and CI/CD-oriented engineering practices.
+            </p>
+
+            <div className="experience-tags">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>Blazor</span>
+              <span>REST APIs</span>
+              <span>SQL</span>
+              <span>CI/CD</span>
+            </div>
+          </article>
+
+          <article>
+            <div className="timeline-meta">
+              <span>Apr 2024 — Dec 2025</span>
               <span>Avila University</span>
             </div>
+
             <h3>Graduate Research Assistant</h3>
             <h4>AI & Machine Learning Research</h4>
+
             <p>
               Built a reproducible NLP and machine-learning research pipeline
-              for more than 205,000 product reviews and compared traditional
-              classifiers with GPT-4-based classification.
+              for more than 205,000 product reviews, benchmarking traditional
+              classifiers against GPT-4-based zero-shot classification and
+              analyzing model behavior and prediction errors.
             </p>
+
+            <div className="experience-tags">
+              <span>Python</span>
+              <span>NLP</span>
+              <span>GPT-4</span>
+              <span>Model Evaluation</span>
+              <span>Research</span>
+            </div>
           </article>
 
           <article>
             <div className="timeline-meta">
-              <span>2019 — 2023</span>
-              <span>Software Engineering</span>
+              <span>Sep 2019 — Dec 2023</span>
+              <span>Enterprise Software Engineering</span>
             </div>
-            <h3>Software Engineer</h3>
-            <h4>Enterprise & Distributed Systems</h4>
+
+            <h3>Software Engineer · Associate Software Engineer</h3>
+            <h4>Backend, Distributed Systems & Performance</h4>
+
             <p>
-              Worked across backend software, distributed data processing,
-              real-time ML infrastructure, performance optimization, C++,
-              Java, Scala, Kafka, Spark, and production reliability.
+              Progressed from associate-level software engineering into broader
+              backend and distributed systems work across C++, Java, Scala,
+              Kafka, Spark, streaming data processing, machine-learning
+              infrastructure, concurrency, performance optimization, testing,
+              and production reliability.
             </p>
+
+            <div className="experience-tags">
+              <span>C++</span>
+              <span>Java</span>
+              <span>Scala</span>
+              <span>Kafka</span>
+              <span>Spark</span>
+              <span>Distributed Systems</span>
+            </div>
           </article>
         </div>
       </section>
