@@ -398,19 +398,54 @@ export default function Home() {
       </section>
 
       <section className="section research-section" id="research">
-        <div>
+        <div className="research-heading">
           <p className="eyebrow">RESEARCH</p>
           <h2>Large-Scale NLP & LLM Evaluation</h2>
+          <p className="research-intro">
+            Graduate research focused on reproducible sentiment-classification
+            pipelines, model benchmarking, and comparative evaluation between
+            traditional machine-learning approaches and GPT-4.
+          </p>
         </div>
 
         <div className="research-card">
-          <strong>205K+</strong>
-          <h3>Product reviews analyzed</h3>
-          <p>
-            Developed preprocessing, feature-engineering, model-training, and
-            evaluation workflows comparing Random Forest, Naive Bayes, SVM,
-            deep-learning approaches, and GPT-4 zero-shot classification.
-          </p>
+          <div className="research-metric">
+            <strong>205K+</strong>
+            <span>Product reviews analyzed</span>
+          </div>
+
+          <div className="research-details">
+            <div>
+              <span className="research-label">PIPELINE</span>
+              <p>
+                Preprocessing → feature engineering → model training →
+                evaluation → comparative analysis
+              </p>
+            </div>
+
+            <div>
+              <span className="research-label">MODELS</span>
+              <p>
+                Random Forest · Naive Bayes · SVM · Deep Learning ·
+                GPT-4 Zero-Shot
+              </p>
+            </div>
+
+            <div>
+              <span className="research-label">EVALUATION</span>
+              <p>
+                Accuracy · Precision · Recall · F1 · prediction-error analysis
+              </p>
+            </div>
+
+            <div>
+              <span className="research-label">OUTPUT</span>
+              <p>
+                Reproducible experimental workflow, comparative findings,
+                research presentation, and co-authored academic work.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
