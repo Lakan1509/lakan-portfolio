@@ -123,23 +123,24 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-identity">
-          <p className="hero-name">LAKAN SINGH DEGAVATH</p>
-
           <div className="hero-kicker">
             <span className="status-dot" />
-            AI/ML & Software Engineer
+            AI/ML & SOFTWARE ENGINEER
           </div>
         </div>
 
-        <h1>
-          Building production
-          <span>AI systems.</span>
+        <h1 className="hero-full-name">
+          LAKAN SINGH DEGAVATH
         </h1>
 
-        <p className="hero-copy">
-          I engineer Generative AI, LLM, RAG, agentic AI, machine learning systems,
-          inference, and distributed systems — from model evaluation and
-          backend architecture to production infrastructure.
+        <h2 className="hero-statement">
+          Building production AI systems that reason, retrieve, and scale.
+        </h2>
+
+        <p className="hero-copy hero-description">
+          Software and AI/ML Engineer building production-grade Generative AI,
+          LLM, RAG, agentic AI, inference, distributed systems, and machine
+          learning infrastructure.
         </p>
 
         <div className="hero-actions">
@@ -455,10 +456,75 @@ export default function Home() {
           <h2>Engineering across models, infrastructure, and systems.</h2>
         </div>
 
-        <div className="skills-cloud">
-          {skills.map((skill) => (
-            <span key={skill}>{skill}</span>
-          ))}
+        <div className="skills-grid">
+          <article className="skill-group">
+            <p>AI / LLM SYSTEMS</p>
+            <div>
+              <span>Generative AI</span>
+              <span>LLMs</span>
+              <span>RAG</span>
+              <span>Agentic AI</span>
+              <span>LangGraph</span>
+              <span>LangChain</span>
+              <span>Embeddings</span>
+              <span>Vector Retrieval</span>
+            </div>
+          </article>
+
+          <article className="skill-group">
+            <p>ML & INFERENCE</p>
+            <div>
+              <span>Python</span>
+              <span>PyTorch</span>
+              <span>TensorFlow</span>
+              <span>scikit-learn</span>
+              <span>Model Evaluation</span>
+              <span>Benchmarking</span>
+              <span>Batching</span>
+              <span>Quantization</span>
+            </div>
+          </article>
+
+          <article className="skill-group">
+            <p>BACKEND & DISTRIBUTED SYSTEMS</p>
+            <div>
+              <span>FastAPI</span>
+              <span>REST APIs</span>
+              <span>C++</span>
+              <span>Java</span>
+              <span>C# / .NET</span>
+              <span>Microservices</span>
+              <span>Distributed Systems</span>
+              <span>Concurrency</span>
+            </div>
+          </article>
+
+          <article className="skill-group">
+            <p>DATA & STREAMING</p>
+            <div>
+              <span>Kafka</span>
+              <span>Spark</span>
+              <span>PySpark</span>
+              <span>SQL</span>
+              <span>PostgreSQL</span>
+              <span>ETL</span>
+              <span>Streaming Pipelines</span>
+            </div>
+          </article>
+
+          <article className="skill-group">
+            <p>MLOPS & CLOUD</p>
+            <div>
+              <span>AWS</span>
+              <span>SageMaker</span>
+              <span>Docker</span>
+              <span>Kubernetes</span>
+              <span>MLflow</span>
+              <span>CI/CD</span>
+              <span>Monitoring</span>
+              <span>LLMOps</span>
+            </div>
+          </article>
         </div>
       </section>
 

@@ -1169,3 +1169,415 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================
+   Technical Skills Groups
+========================= */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 42px;
+}
+
+.skill-group {
+  padding: 24px;
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.018);
+}
+
+.skill-group > p {
+  margin-bottom: 18px;
+
+  color: #a9c5ff;
+
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.skill-group > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-group span {
+  padding: 8px 10px;
+
+  border: 1px solid var(--border);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  color: #b9b9bd;
+
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 10px;
+}
+
+.skill-group:last-child {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 760px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-group:last-child {
+    grid-column: auto;
+  }
+}
+
+/* =========================
+   Identity-First Hero
+========================= */
+
+.hero-kicker {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero-full-name {
+  margin: 0 auto;
+
+  max-width: 1180px;
+
+  text-align: center;
+
+  font-size: clamp(46px, 6vw, 92px);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+
+  color: #f5f5f5;
+}
+
+.hero-statement {
+  margin: 42px auto 0;
+  max-width: 1000px;
+
+  text-align: center;
+
+  font-size: clamp(26px, 3vw, 44px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+
+  color: #d6d6da;
+}
+
+.hero-description {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 850px;
+
+  text-align: center;
+}
+
+.hero-actions {
+  justify-content: center;
+}
+
+.hero-proof {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .hero-full-name {
+    font-size: clamp(40px, 12vw, 64px);
+  }
+
+  .hero-statement {
+    font-size: clamp(24px, 7vw, 34px);
+  }
+}
+
+/* =========================
+   Final Identity-First Hero Override
+========================= */
+
+.hero {
+  min-height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 120px;
+  padding-bottom: 90px;
+
+  text-align: center;
+}
+
+.hero .hero-name {
+  display: none !important;
+}
+
+.hero .hero-kicker {
+  order: 1;
+
+  margin: 0 0 28px !important;
+
+  text-align: center !important;
+
+  color: #aeb8cf;
+
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+}
+
+.hero .hero-full-name {
+  order: 2;
+
+  display: block;
+
+  width: 100%;
+  max-width: 1240px;
+
+  margin: 0 auto !important;
+
+  text-align: center !important;
+
+  font-size: clamp(56px, 7vw, 108px) !important;
+  font-weight: 750 !important;
+  line-height: 0.96 !important;
+  letter-spacing: -0.055em !important;
+
+  color: #f4f4f5 !important;
+}
+
+.hero .hero-statement {
+  order: 3;
+
+  max-width: 1050px;
+
+  margin: 42px auto 0 !important;
+
+  text-align: center !important;
+
+  font-size: clamp(28px, 3.2vw, 46px) !important;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+
+  color: #d8d8dc;
+}
+
+.hero .hero-description {
+  order: 4;
+
+  max-width: 850px;
+
+  margin: 30px auto 0 !important;
+
+  text-align: center !important;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #96969f;
+}
+
+.hero .hero-actions {
+  order: 5;
+
+  width: 100%;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+
+  margin-top: 34px;
+}
+
+.hero .hero-proof {
+  order: 6;
+
+  width: min(920px, 100%);
+
+  margin: 52px auto 0 !important;
+
+  text-align: center !important;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero .hero-full-name {
+    font-size: clamp(48px, 10vw, 76px) !important;
+  }
+
+  .hero .hero-statement {
+    font-size: clamp(26px, 5vw, 38px) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 85px;
+    padding-bottom: 70px;
+  }
+
+  .hero .hero-kicker {
+    font-size: 10px;
+    letter-spacing: 0.22em;
+  }
+
+  .hero .hero-full-name {
+    font-size: clamp(40px, 13vw, 58px) !important;
+    line-height: 1 !important;
+  }
+
+  .hero .hero-statement {
+    margin-top: 30px !important;
+  }
+
+  .hero .hero-description {
+    font-size: 15px;
+  }
+}
+
+/* FINAL NAME-FIRST HERO */
+
+.hero .hero-full-name {
+  display: block !important;
+  width: 100% !important;
+  max-width: 1250px !important;
+
+  margin: 0 auto !important;
+
+  color: #f5f5f7 !important;
+
+  text-align: center !important;
+
+  font-size: clamp(58px, 7vw, 106px) !important;
+  font-weight: 750 !important;
+  line-height: 0.95 !important;
+  letter-spacing: -0.055em !important;
+}
+
+.hero .hero-statement {
+  display: block !important;
+
+  max-width: 1000px !important;
+
+  margin: 42px auto 0 !important;
+
+  color: #d6d6dc !important;
+
+  text-align: center !important;
+
+  font-size: clamp(28px, 3vw, 44px) !important;
+  font-weight: 600 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.03em !important;
+}
+
+.hero .hero-description {
+  max-width: 850px !important;
+
+  margin: 28px auto 0 !important;
+
+  text-align: center !important;
+}
+
+@media (max-width: 700px) {
+  .hero .hero-full-name {
+    font-size: clamp(42px, 12vw, 66px) !important;
+    line-height: 1 !important;
+  }
+
+  .hero .hero-statement {
+    font-size: clamp(24px, 6vw, 34px) !important;
+  }
+}
+
+/* =========================
+   Name-First Hero — Active Markup
+========================= */
+
+.hero {
+  text-align: center;
+}
+
+.hero .hero-identity {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.hero .hero-kicker {
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .hero-full-name {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+
+  color: #f5f5f7;
+  text-align: center;
+
+  font-size: clamp(58px, 7vw, 106px);
+  font-weight: 750;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.hero .hero-statement {
+  max-width: 1050px;
+  margin: 42px auto 0;
+
+  color: #d7d7dc;
+  text-align: center;
+
+  font-size: clamp(28px, 3.1vw, 44px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.hero .hero-copy.hero-description {
+  max-width: 850px;
+  margin: 30px auto 0;
+
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.hero .hero-actions {
+  justify-content: center;
+}
+
+.hero .hero-proof {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 700px) {
+  .hero .hero-full-name {
+    font-size: clamp(42px, 12vw, 66px);
+    line-height: 1;
+  }
+
+  .hero .hero-statement {
+    font-size: clamp(24px, 6vw, 34px);
+  }
+
+  .hero .hero-copy.hero-description {
+    font-size: 15px;
+  }
+}
