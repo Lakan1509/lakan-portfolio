@@ -123,26 +123,6 @@ const projects = [
   },
 ];
 
-const skills = [
-  "Python",
-  "C++",
-  "C# / .NET",
-  "PyTorch",
-  "TensorFlow",
-  "LLMs",
-  "Generative AI",
-  "RAG",
-  "LangGraph",
-  "LangChain",
-  "FastAPI",
-  "Distributed Systems",
-  "Kafka",
-  "Spark / PySpark",
-  "Docker",
-  "Kubernetes",
-  "AWS",
-  "MLOps / LLMOps",
-];
 
 export default function Home() {
   return (
