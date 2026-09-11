@@ -1,8 +1,51 @@
 "use client";
 
 const projects = [
+
   {
     number: "01",
+    visual: "rl",
+    title: "Distributed LLM RL Post-Training & Rollout Platform",
+    subtitle: "RLHF, GRPO & Distributed LLM Training Systems",
+    description:
+      "Systems-oriented platform for LLM reinforcement-learning post-training, distributed rollout generation, reward computation, policy optimization, checkpoint recovery, and GPU-aware orchestration.",
+    tech: [
+      "PyTorch",
+      "GRPO",
+      "PPO",
+      "DPO",
+      "RLHF",
+      "vLLM",
+      "Ray",
+      "FSDP2",
+      "Kubernetes",
+      "NCCL",
+    ],
+    proof: "6 tests · CI passing · GRPO math · checkpoint recovery · distributed runtime interfaces",
+    repo: "https://github.com/Lakan1509/distributed-llm-rl-post-training-platform",
+  },
+  {
+    number: "02",
+    visual: "cost",
+    title: "LLM Inference Performance & Cost Modeling Platform",
+    subtitle: "Inference Performance, Capacity & GPU Fleet Engineering",
+    description:
+      "Benchmark-driven AI infrastructure project for analyzing LLM latency, throughput, batching, GPU utilization, fleet scheduling, serving capacity, and cost-to-serve.",
+    tech: [
+      "Python",
+      "PyTorch",
+      "Hugging Face",
+      "vLLM",
+      "Triton",
+      "GPU Inference",
+      "Capacity Planning",
+      "Fleet Scheduling",
+    ],
+    proof: "6 tests · CI passing · TTFT/E2E analysis · Triton kernel · capacity & fleet models",
+    repo: "https://github.com/Lakan1509/llm-inference-performance-cost-modeling",
+  },
+  {
+    number: "03",
     visual: "agents",
     title: "Enterprise Multi-Agent AI Platform",
     subtitle: "Agentic AI, RAG, Evaluation & Observability",
@@ -22,7 +65,7 @@ const projects = [
     repo: "https://github.com/Lakan1509/enterprise-multi-agent-ai-platform",
   },
   {
-    number: "02",
+    number: "04",
     visual: "benchmark",
     title: "GPU-Accelerated LLM Inference Benchmark",
     subtitle: "LLM Inference & Performance Engineering",
@@ -40,7 +83,7 @@ const projects = [
     repo: "https://github.com/Lakan1509/gpu-llm-inference-benchmark",
   },
   {
-    number: "03",
+    number: "05",
     visual: "streaming",
     title: "Real-Time Fraud Detection Platform",
     subtitle: "Streaming ML & Model Evaluation",
@@ -59,7 +102,7 @@ const projects = [
     repo: "https://github.com/Lakan1509/real-time-fraud-detection-platform",
   },
   {
-    number: "04",
+    number: "06",
     visual: "integration",
     title: "Enterprise Reporting & Data Integration Platform",
     subtitle: ".NET Enterprise Backend & Data Workflows",
@@ -139,8 +182,8 @@ export default function Home() {
 
         <p className="hero-copy hero-description">
           Software and AI/ML Engineer building production-grade Generative AI,
-          LLM, RAG, agentic AI, inference, distributed systems, and machine
-          learning infrastructure.
+          LLM, RAG, agentic AI, RL post-training, inference performance,
+          distributed systems, and production ML infrastructure.
         </p>
 
         <div className="hero-actions">
@@ -173,11 +216,11 @@ export default function Home() {
             <span>Years Engineering</span>
           </div>
           <div>
-            <strong>4</strong>
+            <strong>6</strong>
             <span>Featured Systems</span>
           </div>
           <div>
-            <strong>146+</strong>
+            <strong>158+</strong>
             <span>Automated Tests Across Featured Repos</span>
           </div>
           <div>
@@ -208,6 +251,34 @@ export default function Home() {
               <p className="project-description">{project.description}</p>
 
               <div className={`project-visual project-visual-${project.visual}`}>
+                {project.visual === "rl" && (
+                  <div className="flow-row">
+                    <span>Prompts</span>
+                    <b>→</b>
+                    <span>Rollouts</span>
+                    <b>→</b>
+                    <span>Rewards</span>
+                    <b>→</b>
+                    <span>GRPO / PPO</span>
+                    <b>→</b>
+                    <span>Checkpoint</span>
+                  </div>
+                )}
+
+                {project.visual === "cost" && (
+                  <div className="flow-row">
+                    <span>Requests</span>
+                    <b>→</b>
+                    <span>vLLM</span>
+                    <b>→</b>
+                    <span>TTFT / E2E</span>
+                    <b>→</b>
+                    <span>Capacity</span>
+                    <b>→</b>
+                    <span>Cost</span>
+                  </div>
+                )}
+
                 {project.visual === "agents" && (
                   <div className="flow-row">
                     <span>User</span>
@@ -468,6 +539,28 @@ export default function Home() {
               <span>LangChain</span>
               <span>Embeddings</span>
               <span>Vector Retrieval</span>
+              <span>GRPO</span>
+              <span>PPO</span>
+              <span>DPO</span>
+              <span>RLHF</span>
+            </div>
+          </article>
+
+          <article className="skill-group">
+            <p>LLM INFERENCE & DISTRIBUTED TRAINING</p>
+            <div>
+              <span>vLLM</span>
+              <span>SGLang</span>
+              <span>TensorRT-LLM</span>
+              <span>Triton</span>
+              <span>FSDP / FSDP2</span>
+              <span>Megatron-LM</span>
+              <span>Ray</span>
+              <span>NCCL</span>
+              <span>Tensor Parallelism</span>
+              <span>Pipeline Parallelism</span>
+              <span>Expert Parallelism / MoE</span>
+              <span>Checkpoint Recovery</span>
             </div>
           </article>
 
