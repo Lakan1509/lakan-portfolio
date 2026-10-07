@@ -139,9 +139,6 @@ export default function Home() {
           <a href="#skills">Skills</a>
         </nav>
 
-        <a className="nav-cta" href="/resume.pdf" target="_blank">
-          Resume
-        </a>
       </header>
 
       <section className="hero" id="top">
